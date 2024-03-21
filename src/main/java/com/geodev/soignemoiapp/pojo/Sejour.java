@@ -25,11 +25,12 @@ public class Sejour {
     private Statut statut;
 
     @ManyToOne @JoinColumn(name = "utilisateurID")
-    private Utilisateur utilisateur;
+    private Patient patient;
 
     @ManyToOne @JoinColumn(name = "medecinID")
     private Medecin medecin;
 
+    enum Statut {AVENIR,ENCOURS,TERMINE}
 }
 
-enum Statut {AVENIR,ENCOURS,TERMINE}
+

@@ -27,7 +27,7 @@ public class MedecinServiceImpl implements MedecinService {
             medecinAModifier.setPrenom(medecin.getPrenom());
             medecinAModifier.setSpecialite(medecin.getSpecialite());
             medecinAModifier.setMatricule(medecin.getMatricule());
-            medecinAModifier.setMedecinMDP(medecin.getMedecinMDP());
+//            medecinAModifier.setMedecinMDP(medecin.getMedecinMDP());
             medecinRepository.save(medecinAModifier);
         }
     }

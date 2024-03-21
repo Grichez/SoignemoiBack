@@ -1,10 +1,12 @@
 package com.geodev.soignemoiapp.repository;
 
-import com.geodev.soignemoiapp.pojo.Utilisateur;
+import com.geodev.soignemoiapp.pojo.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
-public interface UtilisateurRepository extends JpaRepository<Utilisateur,Long> {
+public interface PatientRepository extends JpaRepository<Patient,Long> {
 
 }

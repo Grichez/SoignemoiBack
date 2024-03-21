@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Getter
@@ -23,7 +24,9 @@ public class Medecin {
     private String prenom;
     private String specialite;
     private String matricule;
-    private String medecinMDP;
+
+    @ManyToOne @JoinColumn(name="userID")
+    private User user;
 
     @ManyToMany
     @JoinTable( name = "Travailler",
